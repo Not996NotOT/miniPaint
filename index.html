@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="zh-CN">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="x-ua-compatible" content="IE=edge" />
-	<title>miniPaint - image editor</title>
-	<meta name="description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-	<meta name="keywords" content="photo, image, picture, transparent, layers, free, edit, html5, canvas, javascript, online, photoshop, gimp, effects, sharpen, blur, magic eraser tool, clone tool, rotate, resize, photoshop online, online tools, tilt shift, sprites, keypoints" />
+	<title>toolcore - 类似于 PS 的在线图片编辑器</title>
+	<meta name="description" content="toolcore 是一款类似 Photoshop 的在线图片编辑器，支持浏览器内图片编辑、图层处理、裁剪旋转、尺寸调整、滤镜特效、抠图擦除、文字和形状绘制，无需安装即可完成常用图片处理。" />
+	<meta name="keywords" content="toolcore,在线图片编辑器,在线PS,类似Photoshop,图片处理,图片编辑,图层编辑,滤镜特效,裁剪图片,调整尺寸,抠图,在线修图,浏览器图片编辑工具" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0" />
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://toolcore.dev/" />
 	<link rel="icon" sizes="192x192" href="images/favicon.png">
 	<!-- <link rel="manifest" href="dist/manifest.json"> -->
 	<!-- Google -->
-	<meta itemprop="name" content="miniPaint" />
-	<meta itemprop="description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-	<meta itemprop="image" content="https://viliusle.github.io/miniPaint/images/preview.jpg" />
+	<meta itemprop="name" content="toolcore" />
+	<meta itemprop="description" content="toolcore 是一款类似 Photoshop 的在线图片编辑器，支持图层、裁剪、滤镜、文字、形状绘制和常用图片处理功能。" />
+	<meta itemprop="image" content="https://toolcore.dev/images/preview.jpg" />
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="miniPaint" />
-	<meta name="twitter:description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-	<meta name="twitter:image" content="https://viliusle.github.io/miniPaint/images/preview.jpg" />
-	<meta name="twitter:image:alt" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
+	<meta name="twitter:title" content="toolcore - 类似于 PS 的在线图片编辑器" />
+	<meta name="twitter:description" content="在线完成图片编辑、图层处理、裁剪旋转、尺寸调整、滤镜特效、文字和形状绘制。" />
+	<meta name="twitter:image" content="https://toolcore.dev/images/preview.jpg" />
+	<meta name="twitter:image:alt" content="toolcore 在线图片编辑器界面预览" />
 	<!-- Facebook, Pinterest -->
-	<meta property="og:title" content="miniPaint" />
-	<meta property="og:type" content="article" />
-	<meta property="og:url" content="https://viliusle.github.io/miniPaint/" />
-	<meta property="og:image" content="https://viliusle.github.io/miniPaint/images/preview.jpg" />
-	<meta property="og:description" content="miniPaint is free online image editor using HTML5. Edit, adjust your images, add effects online in your browser, without installing anything..." />
-	<meta property="og:site_name" content="miniPaint" />
+	<meta property="og:title" content="toolcore - 类似于 PS 的在线图片编辑器" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://toolcore.dev/" />
+	<meta property="og:image" content="https://toolcore.dev/images/preview.jpg" />
+	<meta property="og:description" content="toolcore 是一款浏览器在线图片编辑器，支持图层、裁剪旋转、滤镜特效、文字和形状绘制等常用图片处理功能。" />
+	<meta property="og:site_name" content="toolcore" />
 	
 	<script src="dist/bundle.js"></script>
 </head>
@@ -35,7 +37,6 @@
 		<nav aria-label="Main Menu" class="main_menu" id="main_menu"></nav>
 		
 		<div class="submenu">
-			<a class="logo" href="#">miniPaint</a>
 			<div class="block attributes" id="action_attributes"></div>
 			<button class="undo_button" id="undo_button" type="button">
 				<span class="sr_only">Undo</span>
@@ -100,5 +101,8 @@
 	</div>
 	<div class="hidden" id="tmp"></div>
 	<div id="popups"></div>
+	<div class="toolcore_footer">
+		<a href="https://toolcore.dev/" target="_blank" rel="noopener noreferrer">toolcore.dev 官网</a>
+	</div>
 </body>
 </html>

@@ -747,18 +747,6 @@ const menuDefinition = [
 				name: 'Keyboard Shortcuts',
 				ellipsis: true,
 				target: 'help/shortcuts.shortcuts'
-			},
-			{
-				name: 'Report Issues',
-				href: 'https://github.com/viliusle/miniPaint/issues'
-			},
-			{
-				divider: true
-			},
-			{
-				name: 'About',
-				ellipsis: true,
-				target: 'help/about.about'
 			}
 		]
 	}
