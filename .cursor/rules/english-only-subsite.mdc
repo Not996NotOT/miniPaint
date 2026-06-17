@@ -1,0 +1,38 @@
+---
+description: Keep this toolcore subsite English-only with English SEO and footer links
+alwaysApply: true
+---
+
+# English-Only Subsite
+
+This project is a single-route English subsite for toolcore. All user-facing copy must stay in English.
+
+## Language
+
+- Default UI language is English (`config.LANG = 'en'`). Do not switch the default to another locale.
+- Do not add Chinese (or other non-English) text to HTML, SEO meta tags, footer links, or custom UI strings.
+- Translation files (for example `src/js/languages/zh.json`) may exist for optional user language switching, but must not be used for default subsite branding or SEO.
+
+## Footer
+
+- Keep a static footer link to `https://toolcore.dev/`.
+- Footer link text must be English only (for example `toolcore.dev` or `Visit toolcore.dev`).
+- Do not use Chinese labels such as `官网`.
+
+## SEO (single route)
+
+- Maintain English SEO in `index.html` for the one public route (`/`).
+- Keep `title`, `description`, `keywords`, `canonical`, Open Graph, Twitter, and JSON-LD in English.
+- Keep `robots.txt` and `sitemap.xml` aligned with the same canonical URL.
+
+## Examples
+
+```html
+<!-- BAD -->
+<title>toolcore - 在线图片编辑器</title>
+<a href="https://toolcore.dev/">toolcore.dev 官网</a>
+
+<!-- GOOD -->
+<title>toolcore - Online Image Editor Like Photoshop</title>
+<a href="https://toolcore.dev/">toolcore.dev</a>
+```

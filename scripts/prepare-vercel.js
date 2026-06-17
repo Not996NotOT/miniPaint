@@ -11,6 +11,8 @@ const pathsToPublish = [
 	'examples',
 	'service-worker.js',
 	'manifest-disabled.json',
+	'robots.txt',
+	'sitemap.xml',
 ];
 
 fs.rmSync(publicDir, {recursive: true, force: true});
