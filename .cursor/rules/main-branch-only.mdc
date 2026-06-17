@@ -1,0 +1,11 @@
+---
+description: Use only the main branch for this project
+alwaysApply: true
+---
+
+# Branch Policy
+
+- Use `main` as the only working and push branch for this project.
+- Do not create commits on `master` or push to `master`.
+- If the repository is on another branch, switch back to `main` before making changes or pushing.
+
